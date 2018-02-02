@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+security:
+  user:
+    name: cloudpm
+    password: cloudpmpswd
+
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: cloud-config
+      profile: dev
+      label: master

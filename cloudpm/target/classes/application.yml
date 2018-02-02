@@ -1,0 +1,6 @@
+server:
+  port: 7984
+
+spring:
+  application:
+    name: cloud-pm

@@ -1,0 +1,13 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tecyun/com.yun.git
+      label: master
+      profile: dev

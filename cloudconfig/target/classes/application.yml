@@ -1,0 +1,6 @@
+server:
+  port: 6052
+
+spring:
+  application:
+    name: cloud-config
