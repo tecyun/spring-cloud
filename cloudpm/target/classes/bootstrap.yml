@@ -1,11 +1,13 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-name:eureka-pswd@localhost:8761/eureka/
 security:
   user:
-    name: cloudpm
-    password: cloudpmpswd
+    name: cloud-name
+    password: cloud-pswd
+  basic:
+    enabled: false
 
 spring:
   cloud:
@@ -15,3 +17,5 @@ spring:
         serviceId: cloud-config
       profile: dev
       label: master
+      password: config-pswd
+      username: config-name

@@ -12,6 +12,7 @@
     <module>cloudconfig</module>
     <module>cloudeureka</module>
     <module>cloudpm</module>
+    <module>cloudcommon</module>
   </modules>
 
   <parent>

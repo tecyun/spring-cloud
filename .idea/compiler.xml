@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloudcommon" />
         <module name="cloudconfig" />
         <module name="cloudeureka" />
         <module name="cloudpm" />
@@ -13,6 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud" target="1.6" />
+      <module name="cloudcommon" target="1.6" />
       <module name="cloudconfig" target="1.6" />
       <module name="cloudeureka" target="1.6" />
       <module name="cloudpm" target="1.6" />
