@@ -1,0 +1,6 @@
+cloud:
+  cache:
+    cacheExpires:
+      TOKEN_CACHE: 1800
+      SMS_CACHE: 300
+      AUTH_CODE_CACHE: 60
