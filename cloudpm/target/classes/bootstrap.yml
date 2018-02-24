@@ -15,7 +15,9 @@ spring:
       discovery:
         enabled: true
         serviceId: cloud-config
-      profile: dev
+#      profile: dev
+      name: cloud
+      profile:  cache,pm-dev
       label: master
       password: config-pswd
       username: config-name
