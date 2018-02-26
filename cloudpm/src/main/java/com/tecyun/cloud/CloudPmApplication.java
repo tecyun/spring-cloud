@@ -2,6 +2,7 @@ package com.tecyun.cloud;
 
 import com.tecyun.cloud.cache.CacheName;
 import com.tecyun.cloud.cache.DefaultCacheManager;
+import com.tecyun.cloud.service.UserBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -34,6 +35,9 @@ public class CloudPmApplication {
   @Autowired
   DefaultCacheManager defaultCacheManager;
 
+  @Autowired
+  private UserBaseService userBaseService;
+
   @GetMapping(value = "/demo")
   public String demo(){
     return gitString;
@@ -43,5 +47,10 @@ public class CloudPmApplication {
   public String addcache(){
     defaultCacheManager.getCache(CacheName.TOKEN_CACHE).put("11111", "test");
     return "ok";
+  }
+
+  @GetMapping(value = "/testDB")
+  public String testDB(){
+    return userBaseService.getName();
   }
 }
