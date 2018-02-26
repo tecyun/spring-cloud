@@ -14,11 +14,9 @@ spring:
       server:
         git:
           uri: https://github.com/tecyun/spring-cloud.git
-          search-paths: cloudconfig/src/main/resources/config/**
-          username: tecyun@foxmail.com
-          password: wshyyqy59643979
+          search-paths: cloudconfig/src/main/resources/config
       label: master
 #      profile: dev
-#                uri: https://github.com/tecyun/spring-cloud.git
-#                search-paths: cloudconfig/src/main/resources/config/**
+#          uri: https://github.com/tecyun/spring-cloud.git
+#          search-paths: cloudconfig/src/main/resources/config
 #              default-label: master

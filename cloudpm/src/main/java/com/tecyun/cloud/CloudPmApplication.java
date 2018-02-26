@@ -41,7 +41,6 @@ public class CloudPmApplication {
 
   @GetMapping(value = "/addcache")
   public String addcache(){
-    Collection<String> cacheNames = defaultCacheManager.getCacheNames();
     defaultCacheManager.getCache(CacheName.TOKEN_CACHE).put("11111", "test");
     return "ok";
   }

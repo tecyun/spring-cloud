@@ -13,9 +13,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tecyun/com.yun.git
+#          uri: https://github.com/tecyun/com.yun.git
+#          search-paths: config
+          uri: https://github.com/tecyun/spring-cloud.git
+          search-paths: cloudconfig/src/main/resources/config
       label: master
 #      profile: dev
-#                uri: https://github.com/tecyun/spring-cloud.git
-#                search-paths: cloudconfig/src/main/resources/config/**
-#              default-label: master
